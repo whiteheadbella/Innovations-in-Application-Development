@@ -1,0 +1,49 @@
+{% extends "EmployApp/base.html" %} 
+
+{% block title %} Our Services {% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h2 class="alert alert-success text-center">Our Services</h2>
+
+    <div class="row">
+        <!-- Service 1 -->
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://source.unsplash.com/600x400/?employees,office" class="card-img-top" alt="Employee Management">
+                <div class="card-body">
+                    <h5 class="card-title">Employee Management</h5>
+                    <p class="card-text">Easily add, update, and remove employees from the system.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://source.unsplash.com/600x400/?database,technology" class="card-img-top" alt="Data Security">
+                <div class="card-body">
+                    <h5 class="card-title">Data Security</h5>
+                    <p class="card-text">All employee records are securely stored with encryption techniques.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-4">
+            <div class="card shadow">
+                <img src="https://source.unsplash.com/600x400/?dashboard,analytics" class="card-img-top" alt="Reports & Insights">
+                <div class="card-body">
+                    <h5 class="card-title">Reports & Insights</h5>
+                    <p class="card-text">Generate reports and gain insights into your workforce efficiently.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center mt-5">
+        <a href="{% url 'home' %}" class="btn btn-primary btn-lg">Manage Employees Now</a>
+    </div>
+</div>
+{% endblock content %}

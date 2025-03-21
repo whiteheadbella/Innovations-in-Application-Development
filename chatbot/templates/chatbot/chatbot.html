@@ -1,0 +1,25 @@
+<!-- chatbot/templates/chatbot/chatbot.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EmployeeAssistantBod</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h2>Welcome to EmployeeAssistantBod</h2>
+
+  <!-- Your regular content can go here -->
+
+  <!-- Dialogflow Messenger Script -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+  <!-- Dialogflow Messenger Widget -->
+  <df-messenger
+    intent="WELCOME"
+    chat-title="EmployeeAssistantBod"
+    agent-id="14ac86db-e4d9-407d-b0da-114ef30f0825"
+    language-code="en">
+  </df-messenger>
+</body>
+</html>

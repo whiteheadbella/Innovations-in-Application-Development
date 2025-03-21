@@ -1,0 +1,20 @@
+{% extends "EmployApp/base.html" %} 
+
+{% block title %} Update Employee {% endblock title %}
+
+{% block content %}
+<div class="container">
+    <h2 class="alert alert-info text-center">Update Employee Information</h2>
+
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form action="" method="POST" class="p-4 border rounded bg-light shadow">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-success w-100">Update</button>
+                <a href="{% url 'home' %}" class="btn btn-secondary w-100 mt-2">Back to Home</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
