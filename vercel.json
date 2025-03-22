@@ -1,19 +1,18 @@
 {
-    "builds": [
-      {
-        "src": "EmployeeSystem/wsgi.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "15mb",
-          "runtime": "python3.9"
-        }
+  "builds": [
+    {
+      "src": "EmployeeSystem/wsgi.py",
+      "use": "@vercel/python",
+      "config": {
+        "maxLambdaSize": "15mb",
+        "runtime": "python"
       }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "EmployeeSystem/wsgi.py"
-      }
-    ]
-  }
-  
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "EmployeeSystem/wsgi.py"
+    }
+  ]
+}
