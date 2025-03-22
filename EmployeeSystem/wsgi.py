@@ -15,3 +15,5 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'EmployeeSystem.settings')
 
 # Get the WSGI application for serving the project
 application = get_wsgi_application()
+
+app = application
